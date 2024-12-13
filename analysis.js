@@ -56,6 +56,12 @@ async function myAnalysis(context, scope) {
     void amountQueue.push(device);
   }
 
+  // stop if queue is empty
+  if (amountQueue.idle() && resultList.length() === 0) {
+    console.error("No devices found to process");
+    return;
+  }
+
   // peridocally console the amount of devices still in the queue
   setInterval(() => {
     console.log(`Devices in queue: ${amountQueue.length()}`);
