@@ -1,0 +1,18 @@
+{
+  "name": "@tago-io/analysis-example-data-amount",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Analysis which logs the top 20 devices with the most data stored",
+  "main": "analysis.js",
+  "repository": "tago-io/analysis-example-data-amount",
+  "author": "Tago LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tago-io/analysis-example-data-amount/issues"
+  },
+  "homepage": "https://github.com/tago-io/analysis-example-data-amount#readme",
+  "dependencies": {
+    "@tago-io/sdk": "^11.3.6",
+    "async": "^3.2.6"
+  }
+}
